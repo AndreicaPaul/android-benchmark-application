@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/info/SCS/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2520833333333333" />
+        <entry key="..\:/info/SCS/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/layout/activity_home_screen.xml" value="0.2359375" />
+        <entry key="..\:/info/SCS/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/layout/fragment_dashboard.xml" value="0.2359375" />
+        <entry key="..\:/info/SCS/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/layout/fragment_home.xml" value="0.2359375" />
+        <entry key="..\:/info/SCS/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/layout/fragment_profile.xml" value="0.2359375" />
+        <entry key="..\:/info/SCS/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/layout/fragment_scores.xml" value="0.2359375" />
+        <entry key="..\:/info/SCS/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2359375" />
+        <entry key="..\:/info/scs/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.23560910307898258" />
+        <entry key="..\:/info/scs/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/layout-w936dp/activity_login.xml" value="0.275" />
+        <entry key="..\:/info/scs/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/layout/activity_home_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/info/scs/Project Work/android-benchmark-application/AndroidBenchmark/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
