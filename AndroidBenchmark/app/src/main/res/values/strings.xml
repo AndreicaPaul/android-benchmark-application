@@ -13,4 +13,7 @@
     <string name="title_home">Home</string>
     <string name="title_scores">Scores</string>
     <string name="title_profile">Profile</string>
+    <string name="run_benchmark">RUN BENCHMARK</string>
+    <string name="re_run_test">Re-run test</string>
+    <string name="press_the_button_below_to_run_your_benchmark">Press the button below to run your benchmark!</string>
 </resources>

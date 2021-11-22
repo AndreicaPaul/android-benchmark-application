@@ -1,4 +1,4 @@
-package paul.androidbenchmark.ui.home_screen.ui.scores;
+package paul.androidbenchmark.ui.home_screen.fragments.scores;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

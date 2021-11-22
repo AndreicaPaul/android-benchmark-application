@@ -1,9 +1,10 @@
-package paul.androidbenchmark.ui.home_screen.ui.home;
+package paul.androidbenchmark.ui.home_screen.fragments.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,19 +22,40 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        final Button runBenchmarkButton = binding.runBenchmarkButton;
+        final TextView infoText = binding.textHome;
+        final Button rerunBenchmarkButton = binding.rerunBenchmarkButton;
+
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                infoText.setText(s);
             }
         });
+
+        runBenchmarkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setVisibility(View.GONE);
+                homeViewModel.runBenchmarkTest();
+                rerunBenchmarkButton.setVisibility(View.VISIBLE);
+            }
+        });
+
+        rerunBenchmarkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setVisibility(View.GONE);
+                homeViewModel.runBenchmarkTest();
+                v.setVisibility(View.VISIBLE);
+            }
+        });
+
         return root;
     }
 

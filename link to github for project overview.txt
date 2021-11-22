@@ -1,1 +1,2 @@
+Can't upload the application in moodle, you can find it here:
 https://github.com/AndreicaPaul/android-benchmark-application

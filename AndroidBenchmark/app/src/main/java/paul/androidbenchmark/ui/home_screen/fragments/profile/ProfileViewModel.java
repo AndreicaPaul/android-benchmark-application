@@ -1,4 +1,4 @@
-package paul.androidbenchmark.ui.home_screen.ui.profile;
+package paul.androidbenchmark.ui.home_screen.fragments.profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

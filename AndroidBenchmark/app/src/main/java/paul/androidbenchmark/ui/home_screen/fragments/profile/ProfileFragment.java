@@ -1,4 +1,4 @@
-package paul.androidbenchmark.ui.home_screen.ui.profile;
+package paul.androidbenchmark.ui.home_screen.fragments.profile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

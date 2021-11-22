@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="paul.androidbenchmark.ui.home_screen.ui.home.HomeFragment"
+        android:name="paul.androidbenchmark.ui.home_screen.fragments.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="paul.androidbenchmark.ui.home_screen.ui.scores.ScoresFragment"
+        android:name="paul.androidbenchmark.ui.home_screen.fragments.scores.ScoresFragment"
         android:label="@string/title_scores"
         tools:layout="@layout/fragment_scores" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="paul.androidbenchmark.ui.home_screen.ui.profile.ProfileFragment"
+        android:name="paul.androidbenchmark.ui.home_screen.fragments.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>
