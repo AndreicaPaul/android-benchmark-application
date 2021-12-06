@@ -36,15 +36,14 @@ public class HomeViewModel extends ViewModel {
     private class AsyncTaskRunner extends AsyncTask<String, String, String> {
         @Override
         protected String doInBackground(String... params) {
-            tsLong = System.nanoTime();
+            tsLong = 0;
             for (int i = 0; i<20000; i++) {
-                mBenchmark.computeSHAHash("My test string");
+                tsLong += mBenchmark.computeSHAHash("My test string");
                 int percentage = i/200;
                 publishProgress(percentage + "%");
             }
-            long ttLong = System.nanoTime() - tsLong;
-            tt = Long.toString(ttLong);
-            int roundnumber = Math.round(ttLong / 100000000);
+            tt = Long.toString(tsLong);
+            int roundnumber = Math.round(tsLong / 100000000);
             String score = Integer.toString(roundnumber);
             return "SHA-1 hash: " + " " + mBenchmark.getHashValue() + "\n Time Taken: " + tt + "\n Score: " + score;
         }

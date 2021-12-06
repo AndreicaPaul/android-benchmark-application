@@ -14,9 +14,9 @@ public class Benchmark {
     private String HashValue;
 
 
-    public void computeSHAHash(String password)
+    public long computeSHAHash(String password)
     {
-
+        long time = System.nanoTime();
         MessageDigest mdSha1 = null;
         try
         {
@@ -38,6 +38,7 @@ public class Benchmark {
 
         sb.append(hex);
         HashValue=sb.toString();
+        return System.nanoTime() - time;
     }
 
     public String getHashValue() {
